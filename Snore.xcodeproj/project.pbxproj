@@ -12,7 +12,61 @@
 		32E0712D1BF91DAB000AC6AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E0712B1BF91DAB000AC6AC /* Main.storyboard */; };
 		32E0712F1BF91DAB000AC6AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E0712E1BF91DAB000AC6AC /* Assets.xcassets */; };
 		32E071321BF91DAB000AC6AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E071301BF91DAB000AC6AC /* LaunchScreen.storyboard */; };
+		32E0713A1BF92ED3000AC6AC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E071391BF92ED3000AC6AC /* AVFoundation.framework */; };
+		32FF91A21BFC3DB5005193A7 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32FF91961BF988F2005193A7 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32FF91951BF988F2005193A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32FF918F1BF988F1005193A7 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		32FF91971BF988F2005193A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32FF918F1BF988F1005193A7 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		32FF91991BF988F2005193A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32FF918F1BF988F1005193A7 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		32FF919B1BF98901005193A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32FF918F1BF988F1005193A7 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		32FF91A31BFC3DB5005193A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32FF918F1BF988F1005193A7 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		32FF91A51BFC3DB5005193A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				32FF91A21BFC3DB5005193A7 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		32E071241BF91DAB000AC6AC /* Snore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +76,8 @@
 		32E0712E1BF91DAB000AC6AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32E071311BF91DAB000AC6AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32E071331BF91DAB000AC6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32E071391BF92ED3000AC6AC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		32FF918F1BF988F1005193A7 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../GitHub/ios-charts/Charts/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E0713A1BF92ED3000AC6AC /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +95,8 @@
 		32E0711B1BF91DAB000AC6AC = {
 			isa = PBXGroup;
 			children = (
+				32FF918F1BF988F1005193A7 /* Charts.xcodeproj */,
+				32E071391BF92ED3000AC6AC /* AVFoundation.framework */,
 				32E071261BF91DAB000AC6AC /* Snore */,
 				32E071251BF91DAB000AC6AC /* Products */,
 			);
@@ -64,6 +123,16 @@
 			path = Snore;
 			sourceTree = "<group>";
 		};
+		32FF91901BF988F1005193A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32FF91961BF988F2005193A7 /* Charts.framework */,
+				32FF91981BF988F2005193A7 /* Charts.framework */,
+				32FF919A1BF988F2005193A7 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,10 +143,13 @@
 				32E071201BF91DAB000AC6AC /* Sources */,
 				32E071211BF91DAB000AC6AC /* Frameworks */,
 				32E071221BF91DAB000AC6AC /* Resources */,
+				32FF91A51BFC3DB5005193A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				32FF919C1BF98901005193A7 /* PBXTargetDependency */,
+				32FF91A41BFC3DB5005193A7 /* PBXTargetDependency */,
 			);
 			name = Snore;
 			productName = Snore;
@@ -96,6 +168,7 @@
 				TargetAttributes = {
 					32E071231BF91DAB000AC6AC = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = HJMQQGD2VE;
 					};
 				};
 			};
@@ -110,12 +183,42 @@
 			mainGroup = 32E0711B1BF91DAB000AC6AC;
 			productRefGroup = 32E071251BF91DAB000AC6AC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 32FF91901BF988F1005193A7 /* Products */;
+					ProjectRef = 32FF918F1BF988F1005193A7 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				32E071231BF91DAB000AC6AC /* Snore */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		32FF91961BF988F2005193A7 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 32FF91951BF988F2005193A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32FF91981BF988F2005193A7 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 32FF91971BF988F2005193A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		32FF919A1BF988F2005193A7 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 32FF91991BF988F2005193A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		32E071221BF91DAB000AC6AC /* Resources */ = {
@@ -141,6 +244,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32FF919C1BF98901005193A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = 32FF919B1BF98901005193A7 /* PBXContainerItemProxy */;
+		};
+		32FF91A41BFC3DB5005193A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = 32FF91A31BFC3DB5005193A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		32E0712B1BF91DAB000AC6AC /* Main.storyboard */ = {
@@ -247,10 +363,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Snore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.Snore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +378,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Snore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.Snore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +408,7 @@
 				32E071381BF91DAC000AC6AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
